@@ -1,43 +1,43 @@
-[social_media_data.csv](https://github.com/user-attachments/files/28667351/social_media_data.csv)Social Media Analytics
+# Social Media Analytics
 The Social Media Analytics Dashboard is a data analytics project developed using Python, Pandas, and Matplotlib to analyze social media engagement across different platforms. The dashboard processes data related to likes, comments, and shares, helping users understand audience engagement patterns and identify the best-performing social media platform. Through data visualization and performance metrics, the project provides valuable insights for improving social media marketing strategies and decision-making.
 
-Key Features
-Data Collection and Processing
+# Key Features
+# Data Collection and Processing
   Import social media data from CSV files.
   Clean and organize datasets for analysis.
   Handle missing or inconsistent data.
-2. Engagement Analysis
+# Engagement Analysis
   Calculate total likes, comments, and shares.
   Measure overall engagement for each platform.
   Compare engagement metrics across platforms.
-3. Platform Performance Comparison
+# Platform Performance Comparison
   Identify the highest-performing platform.
   Rank platforms based on engagement levels.
   Analyze audience interaction trends.
-4. Data Visualization
+# Data Visualization
   Interactive bar charts for likes, comments, and shares.
   Pie charts showing engagement distribution.
   Clear graphical representation of social media performance.
-5. Dashboard Reporting
+#  Dashboard Reporting
   Generate summarized reports.
   Present insights in an easy-to-understand format.
   Support data-driven marketing decisions.
-6. Performance Insights
+# Performance Insights
   Detect engagement patterns and trends.
   Highlight strengths and weaknesses of each platform.
   Provide recommendations for content strategy improvement.
-Technologies Used
+# Technologies Used
   Python
   Pandas
   Matplotlib
   CSV Dataset
-HOW TO USE CODE
-Create Project Folder
+# HOW TO USE CODE
+# Create Project Folder
   Social_Media_Analytics
   │
   ├── social_media_data.csv
   ├── analysis.py
-Create CSV File
+# Create CSV File
   Date,Platform,Likes,Comments,Shares
   2026-01-01,Instagram,500,80,40
   2026-01-02,Facebook,300,50,20
@@ -48,7 +48,7 @@ Create CSV File
   2026-01-07,Instagram,800,120,70
   2026-01-08,Facebook,600,90,50
   2026-01-09,Twitter,350,45,20
-Create analysis.py
+# Create analysis.py
 import pandas as pd
 
 df = pd.read_csv("social_media_data.csv")
@@ -89,42 +89,9 @@ plt.ylabel("")
 plt.show()
 plt.savefig("charts/likes_chart.png")
 
-OUTPUT
+# OUTPUT
 <img width="640" height="480" alt="Figure_2" src="https://github.com/user-attachments/assets/8b3752c3-4f48-416d-ad24-b805d4e7dd10" />
 
 <img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/faecc717-c544-4892-a71d-ed642a7171f9" />
 
-Date   Platform  Likes  Comments  Shares
-0  2026-01-01  Instagram    500        80      40
-1  2026-01-02   Facebook    300        50      20
-2  2026-01-03    Twitter    200        30      15
-3  2026-01-04  Instagram    700       100      60
-4  2026-01-05   Facebook    450        70      35
-5  2026-01-06    Twitter    250        40      20
-6  2026-01-07  Instagram    800       120      70
-7  2026-01-08   Facebook    600        90      50
-8  2026-01-09    Twitter    350        45      25
-         Date   Platform  Likes  Comments  Shares  Total_Engagement
-0  2026-01-01  Instagram    500        80      40               620
-1  2026-01-02   Facebook    300        50      20               370
-2  2026-01-03    Twitter    200        30      15               245
-3  2026-01-04  Instagram    700       100      60               860
-4  2026-01-05   Facebook    450        70      35               555
-5  2026-01-06    Twitter    250        40      20               310
-6  2026-01-07  Instagram    800       120      70               990
-7  2026-01-08   Facebook    600        90      50               740
-8  2026-01-09    Twitter    350        45      25               420
-           Likes  Comments  Shares
-Platform                          
-Facebook    1350       210     105
-Instagram   2000       300     170
-Twitter      800       115      60
-           Likes  Comments  Shares  Total
-Platform                                 
-Facebook    1350       210     105   1665
-Instagram   2000       300     170   2470
-Twitter      800       115      60    975
-Best Platform: Instagram
-
-
-
+<img width="439" height="412" alt="image" src="https://github.com/user-attachments/assets/7b7c6e29-9b00-47fc-bbda-fb83fd29f192" />
